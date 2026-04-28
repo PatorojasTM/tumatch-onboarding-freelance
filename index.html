@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onboarding para la certificación de corredores freelance de TuMatch · 2026</title>
+<meta name="description" content="Onboarding oficial TuMatch: primer paso dentro del camino de desarrollo profesional para convertirte en corredor inmobiliario experto. 9 módulos, prueba final 20/80 y certificado como Corredor Freelance Asociado.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Cinzel:wght@500;600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<meta name="theme-color" content="#FAF8F4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1621" media="(prefers-color-scheme: dark)">
+<script>
+  (function(){
+    try{
+      var saved = localStorage.getItem('tumatch_theme');
+      if (saved === 'dark' || saved === 'light') { document.documentElement.setAttribute('data-theme', saved); }
+    }catch(e){}
+  })();
+</script>
+</head>
+<body>
+
+<div class="academy-bar">
+  <span class="academy-bar-inner">Academia de Corredores · TuMatch Inmobiliario · Onboarding para la Certificación de Corredores Freelance</span>
+</div>
+<header class="hdr">
+  <div class="grad-stripe"></div>
+  <div class="hdr-row">
+    <a class="brand-logo" href="#" onclick="App.goToModule(0);return false;" aria-label="Academia TuMatch Inmobiliario — Inicio">
+      <img class="brand-img" id="brandLogoImg" src="assets/tumatch_horizontal_positivo.jpg" alt="TuMatch Inmobiliario">
+      <div class="brand-tagline">
+        <div class="brand-tagline-l1">Academia de Corredores</div>
+        <div class="brand-tagline-l2">Onboarding Corredor Freelance · 2026</div>
+      </div>
+    </a>
+    <div class="hdr-actions">
+      <span class="taller-badge">Primer paso · Programa de Desarrollo Profesional</span>
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo claro/oscuro" title="Cambiar modo claro/oscuro">
+        <svg class="tt-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="2.5" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="21.5"/><line x1="2.5" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="21.5" y2="12"/><line x1="4.9" y1="4.9" x2="6.7" y2="6.7"/><line x1="17.3" y1="17.3" x2="19.1" y2="19.1"/><line x1="4.9" y1="19.1" x2="6.7" y2="17.3"/><line x1="17.3" y1="6.7" x2="19.1" y2="4.9"/></g></svg>
+        <svg class="tt-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5Z" fill="currentColor"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="progress-wrap">
+  <div class="progress-inner">
+    <span class="progress-label">Progreso del onboarding</span>
+    <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+    <span class="progress-num" id="progressNum">0%</span>
+  </div>
+</div>
+
+<nav class="modnav"><div class="modnav-inner" id="modnavInner"></div></nav>
+
+<div class="admin-ribbon" id="adminRibbon" style="display:none">
+  Modo admin activo · todos los módulos desbloqueados para revisión interna
+</div>
+
+<!-- ===== MÓDULO 0 · INTRO ===== -->
+<section class="module active" id="mod-0">
+  <div class="hero-new">
+    <div class="hero-new-inner">
+      <div class="hero-academy-mark">Programa de Desarrollo Profesional · TuMatch</div>
+      <img class="hero-logo" id="heroLogoImg" src="assets/tumatch_horizontal_positivo.jpg" alt="TuMatch Inmobiliario">
+      <div class="hero-eyebrow-line">Primer paso hacia el perfil de Corredor Experto</div>
+      <h1 class="hero-title">Onboarding para la Certificación<br><em>de Corredores Freelance</em></h1>
+      <p class="hero-lead">Este onboarding es el <strong>primer paso</strong> dentro del camino de desarrollo profesional TuMatch. Su objetivo es prepararte como <strong>Corredor Freelance Asociado</strong>: el punto de entrada a un proceso de formación continua orientado a transformarte en un corredor inmobiliario experto.</p>
+
+      <div class="hero-meta">
+        <div class="hero-meta-item"><div class="hero-meta-num">9</div><div class="hero-meta-lbl">Módulos</div></div>
+        <div class="hero-meta-sep"></div>
+        <div class="hero-meta-item"><div class="hero-meta-num">2,5<span class="u">h</span></div><div class="hero-meta-lbl">Duración</div></div>
+        <div class="hero-meta-sep"></div>
+        <div class="hero-meta-item"><div class="hero-meta-num">20/80</div><div class="hero-meta-lbl">Prueba final</div></div>
+        <div class="hero-meta-sep"></div>
+        <div class="hero-meta-item"><div class="hero-meta-num">1</div><div class="hero-meta-lbl">Certificado</div></div>
+      </div>
+
+      <div id="resumeBanner" class="resume-banner" style="display:none">
+        <div class="resume-banner-icon">📖</div>
+        <div class="resume-banner-body">
+          <div class="resume-banner-title">Avance registrado</div>
+          <div class="resume-banner-text" id="resumeBannerText">Puedes continuar desde donde quedaste.</div>
+        </div>
+        <button class="btn btn-primary resume-banner-btn" id="resumeBannerBtn">Continuar →</button>
+      </div>
+
+      <div class="hero-cta-row">
+        <button class="hero-cta-new" onclick="App.startModule(1)" id="heroStartBtn">Iniciar onboarding →</button>
+      </div>
+
+      <div class="hero-save-hint">
+        <span class="save-dot"></span>
+        <span>El avance se guarda automáticamente en este navegador: cada respuesta, cada módulo completado y el progreso de la prueba final se retoman exactamente donde quedaste al volver a entrar. Tres errores acumulados en un módulo activan un bloqueo de cinco minutos; la prueba final se bloquea cinco minutos en caso de reprobación.</span>
+      </div>
+
+      <div class="pre-taller">
+        <strong>El camino de desarrollo profesional en TuMatch.</strong> Este onboarding entrega las competencias fundamentales para ejercer el corretaje inmobiliario con estándar profesional y es <em>el requisito de ingreso</em> al equipo. Desde aquí, el corredor avanza mediante experiencia práctica con un Team Leader y cursos de especialización por tipología de cliente hasta alcanzar el perfil de <strong>Corredor Experto TuMatch</strong>.
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="sec-header" style="text-align:center;margin-bottom:36px">
+      <div class="sec-tag" style="margin-left:auto;margin-right:auto"><span class="dot"></span>Contenido del onboarding</div>
+      <h2 class="sec-h2" style="margin-left:auto;margin-right:auto;max-width:720px">Nueve módulos · fundamentos del corretaje profesional</h2>
+      <p class="sec-desc" style="margin-left:auto;margin-right:auto">Cada módulo integra marco conceptual, criterios operativos y un quiz de cinco preguntas de selección única. La prueba final consta de veinte preguntas extraídas al azar de un banco de ochenta, con alternativas cuyo orden se aleatoriza en cada rendición. Aprobación con 80%.</p>
+    </div>
+
+    <div class="mod-funnel">
+      <div class="mod-t-item" onclick="App.startModule(1)">
+        <div class="mod-t-num">01</div>
+        <div class="mod-t-body">
+          <div class="mod-t-head"><div class="mod-t-title">Bienvenida · TuMatch, el mercado y la ruta profesional</div><div class="mod-t-time">≈ 14 min</div></div>
+          <div class="mod-t-keys"><span>Quiénes somos</span><span>Datos 2025-2026</span><span>Estándar profesional</span><span>Niveles de carrera</span></div>
+        </div>
+      </div>
+      <div class="mod-t-item" onclick="App.startModule(2)">
+        <div class="mod-t-num">02</div>
+        <div class="mod-t-body">
+          <div class="mod-t-head"><div class="mod-t-title">Los cuatro tipos de cliente · identificación temprana</div><div class="mod-t-time">≈ 14 min</div></div>
+          <div class="mod-t-keys"><span>Matriz de tipologías</span><span>Motor de decisión</span><span>Preguntas de calificación</span><span>Adecuación de estrategia</span></div>
+        </div>
+      </div>
+      <div class="mod-t-item" onclick="App.startModule(3)">
+        <div class="mod-t-num">03</div>
+        <div class="mod-t-body">
+          <div class="mod-t-head"><div class="mod-t-title">Prospección y primer contacto profesional</div><div class="mod-t-time">≈ 14 min</div></div>
+          <div class="mod-t-keys"><span>Script por canal</span><span>Calificación en 5 min</span><span>Comunicación profesional</span><span>Cierre con próximo paso</span></div>
+        </div>
+      </div>
+      <div class="mod-t-item" onclick="App.startModule(4)">
+        <div class="mod-t-num">04</div>
+        <div class="mod-t-body">
+          <div class="mod-t-head"><div class="mod-t-title">Proceso de una operación · de prospección a postventa</div><div class="mod-t-time">≈ 14 min</div></div>
+          <div class="mod-t-keys"><span>Seis etapas maestras</span><span>Documentación legal</span><span>Tiempos por tipología</span><span>Intervención del TL</span></div>
+        </div>
+      </div>
+      <div class="mod-t-item" onclick="App.startModule(5)">
+        <div class="mod-t-num">05</div>
+        <div class="mod-t-body">
+          <div class="mod-t-head"><div class="mod-t-title">Tipo 1 · Comprador Primera Vivienda</div><div class="mod-t-time">≈ 16 min</div></div>
+          <div class="mod-t-keys"><span>Viabilidad financiera</span><span>Educación en crédito</span><span>Subsidios MINVU</span><span>Objeciones</span></div>
+        </div>
+      </div>
+      <div class="mod-t-item" onclick="App.startModule(6)">
+        <div class="mod-t-num">06</div>
+        <div class="mod-t-body">
+          <div class="mod-t-head"><div class="mod-t-title">Tipo 2 · Inversionista</div><div class="mod-t-time">≈ 16 min</div></div>
+          <div class="mod-t-keys"><span>Cap rate bruto y neto</span><span>Datos RM 2025</span><span>Análisis documentado</span><span>Objeciones</span></div>
+        </div>
+      </div>
+      <div class="mod-t-item" onclick="App.startModule(7)">
+        <div class="mod-t-num">07</div>
+        <div class="mod-t-body">
+          <div class="mod-t-head"><div class="mod-t-title">Tipo 3 · Cliente Vendedor</div><div class="mod-t-time">≈ 16 min</div></div>
+          <div class="mod-t-keys"><span>Embudo de captación</span><span>Estimación de Precio (AEP)</span><span>Exclusividad</span><span>Objeciones</span></div>
+        </div>
+      </div>
+      <div class="mod-t-item" onclick="App.startModule(8)">
+        <div class="mod-t-num">08</div>
+        <div class="mod-t-body">
+          <div class="mod-t-head"><div class="mod-t-title">Tipo 4 · Operación de arriendo</div><div class="mod-t-time">≈ 18 min</div></div>
+          <div class="mod-t-keys"><span>Vida del lead</span><span>Comisión 50%+IVA</span><span>Reserva $100k</span><span>Protocolo de privacidad</span></div>
+        </div>
+      </div>
+      <div class="mod-t-item" onclick="App.startModule(9)">
+        <div class="mod-t-num">09</div>
+        <div class="mod-t-body">
+          <div class="mod-t-head"><div class="mod-t-title">Activación de red y próximos pasos en TuMatch</div><div class="mod-t-time">≈ 12 min</div></div>
+          <div class="mod-t-keys"><span>Círculos de contacto</span><span>Embudo de 30 contactos</span><span>Alianzas del ecosistema</span><span>Contrato y reunión TL</span></div>
+        </div>
+      </div>
+      <div class="mod-t-item mod-t-final">
+        <div class="mod-t-num">★</div>
+        <div class="mod-t-body">
+          <div class="mod-t-head"><div class="mod-t-title">Prueba final · Certificación Corredor Freelance</div><div class="mod-t-time">≈ 20 min</div></div>
+          <div class="mod-t-keys"><span>Prueba de 20 preguntas</span><span>Aprobación 16/20</span><span>Certificado descargable</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="how-works">
+      <div class="how-item">
+        <div class="how-n">01</div>
+        <div class="how-title">Metodología de evaluación</div>
+        <div class="how-text">Cada módulo finaliza con cinco preguntas de selección única. El módulo se aprueba únicamente con las cinco respuestas correctas, lo que habilita el avance al siguiente contenido.</div>
+      </div>
+      <div class="how-item">
+        <div class="how-n">02</div>
+        <div class="how-title">Intentos y bloqueo</div>
+        <div class="how-text">El máximo permitido es 3 intentos fallidos por módulo. Al superarlo, el módulo queda bloqueado durante 5 minutos antes de poder retomarlo.</div>
+      </div>
+      <div class="how-item">
+        <div class="how-n">03</div>
+        <div class="how-title">Certificación final</div>
+        <div class="how-text">Se requieren 16/20 respuestas correctas para obtener la certificación y habilitar la activación del perfil Corredor Freelance.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MÓDULO 1 · Bienvenida y ruta profesional ===== -->
+<section class="module" id="mod-1">
+  <div class="page">
+    <div class="sec-header">
+      <div class="sec-tag"><span class="dot"></span>Módulo 1 · Bienvenida TuMatch</div>
+      <h2 class="sec-h2">La empresa, el mercado y la ruta profesional</h2>
+      <p class="sec-desc"><strong>TuMatch Inmobiliario</strong> es una empresa dedicada a formar corredores inmobiliarios expertos. Entrega formación técnica, acompañamiento operativo y un equipo que ejecuta negocios de manera conjunta, en una ruta profesional que comienza en este onboarding y avanza por niveles definidos hasta la especialización por tipología de cliente.</p>
+    </div>
+
+    <div class="grid-2 aligned-cards" style="margin-bottom:28px">
+      <div class="card tipo-card" style="border-left:4px solid var(--capt-pink)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--capt-pinkDk);margin-bottom:14px">Servicios al mercado</div>
+        <ul class="checklist stacked">
+          <li><strong>Arriendo</strong><span>Publicación multicanal, verificación de antecedentes, contrato, acta y entrega.</span></li>
+          <li><strong>Venta</strong><span>Estimación de Precio, plan de marketing, coordinación de visitas, negociación, acompañamiento hasta escritura y entrega de llaves al comprador.</span></li>
+          <li><strong>Captación exclusiva</strong><span>Evaluación inicial, plan dedicado y reportes periódicos al propietario.</span></li>
+          <li><strong>Postventa</strong><span>Acompañamiento en firmas, entrega de llaves, solicitud de referidos y fidelización del cliente.</span></li>
+        </ul>
+      </div>
+      <div class="card tipo-card" style="border-left:4px solid var(--gold)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--goldDk);margin-bottom:14px">Soporte al corredor</div>
+        <ul class="checklist stacked">
+          <li><strong>CRM última generación</strong><span>Plataforma CRM para trabajar a tus clientes, con embudos, herramientas, academia, propiedades, propuestas personalizadas y todo lo que necesitas en un lugar.</span></li>
+          <li><strong>Publicación multicanal</strong><span>Proppit, Portal Inmobiliario, MercadoLibre, Enlace Inmobiliario, Yapo y Portal TuMatch. Todo a un click con republicación automática.</span></li>
+          <li><strong>Team Leader por zona</strong><span>Apoyo operativo, coaching y apoyo en la gestión de ejecución de tus negocios.</span></li>
+          <li><strong>Matchmaking</strong><span>Derivación de leads entre corredores según perfil y tipología.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sec-header" style="margin-top:20px;margin-bottom:16px">
+      <div class="sec-tag"><span class="dot"></span>Mercado Chile 2025-2026</div>
+      <h2 class="sec-h2" style="font-size:28px">Indicadores de referencia</h2>
+    </div>
+
+    <div class="grid-3 aligned-cards" style="margin-bottom:28px">
+      <div class="tip-card">
+        <div class="tip-title">Mercado en recuperación 2025</div>
+        <div class="tip-text">Las ventas de viviendas nuevas en la Región Metropolitana muestran recuperación interanual sostenida durante 2025 (~10% según CChC), desde la base contraída de 2023-2024. Escenario con stock disponible y demanda reactivándose.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-title">UF 2.800 - 3.500 · ticket primera vivienda</div>
+        <div class="tip-text">Rango típico del segmento primera vivienda en RM. Accesible mediante crédito hipotecario (dividendo entre UF 14 y UF 20 aprox. según tasa y plazo) con apoyo de subsidios DS1 o DS49 en los tramos inferiores.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-title">Cap rate RM · 4,8 a 7,2% bruto</div>
+        <div class="tip-text">Rango del cap rate bruto en renta residencial RM 2025, variable por segmento (1-2D nuevos vs usados). El cap rate neto efectivo, tras impuestos y gastos operativos, se sitúa entre 3% y 4,5%.</div>
+      </div>
+    </div>
+
+    <div class="info-box pink">
+      <span class="info-icon">💡</span>
+      <div class="info-text"><strong>¿Qué es ser un corredor de propiedades?</strong> El corredor de propiedades es un asesor profesional que representa los intereses de una o ambas partes en una operación inmobiliaria. Su trabajo no inicia en la publicación: comienza con la detección de la oportunidad y la captación formal de la propiedad o el cliente interesado.</div>
+    </div>
+
+    <div class="info-box success" style="margin-top:20px">
+      <span class="info-icon">🧭</span>
+      <div class="info-text"><strong>Estándar profesional del corredor TuMatch.</strong> Escucha activa, diagnóstico técnico, comunicación transparente y acompañamiento durante todo el proceso. La asesoría se basa en datos de mercado y viabilidad real, no en promesas no verificadas.</div>
+    </div>
+
+    <div class="sec-header" style="margin-top:40px;margin-bottom:18px">
+      <div class="sec-tag"><span class="dot"></span>Niveles de carrera en TuMatch</div>
+      <h2 class="sec-h2" style="font-size:28px">Ruta profesional del corredor</h2>
+      <p class="sec-desc">El onboarding entrega el nivel de ingreso. La progresión posterior combina experiencia práctica con un Team Leader y especialización por tipología de cliente.</p>
+    </div>
+
+    <div style="overflow-x:auto;margin:0 0 28px">
+      <table class="barrio-table">
+        <thead><tr><th>Nivel</th><th>Requisito</th><th>Comisión tope por negocio</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Referidor</strong></td><td>Sin onboarding · cuenta directa</td><td>Hasta 20%</td></tr>
+          <tr><td><strong>Captador</strong></td><td>Curso express · integración al equipo</td><td>Hasta 30%</td></tr>
+          <tr><td><strong>Freelance Asociado</strong></td><td>Este onboarding aprobado · opera con Team Leader</td><td>Hasta 60%</td></tr>
+          <tr><td><strong>Freelance Autónomo</strong></td><td>Opcional tras primer negocio cerrado · opera sin TL</td><td>Hasta 65%</td></tr>
+          <tr><td><strong>Team Leader</strong></td><td>Evaluación con un agente TuMatch</td><td>7,5% sobre cada corredor del equipo + hasta 65% en negocios propios</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="info-box warn">
+      <span class="info-icon">📋</span>
+      <div class="info-text"><strong>Al aprobar este onboarding, el corredor ingresa como Freelance Asociado.</strong> Se activa el perfil profesional, se asigna un Team Leader por zona y se firma el Contrato de Corredor Asociado. Este es el primer nivel dentro de un proceso continuo cuyo objetivo es la formación de corredores expertos por tipología.</div>
+    </div>
+
+    <div id="quiz-1" class="quiz-gate"></div>
+  </div>
+</section>
+
+<!-- ===== MÓDULO 2 · Los 4 tipos de cliente ===== -->
+<section class="module" id="mod-2">
+  <div class="page">
+    <div class="sec-header">
+      <div class="sec-tag"><span class="dot"></span>Módulo 2 · Tipologías de cliente</div>
+      <h2 class="sec-h2">Identificación temprana del tipo de cliente</h2>
+      <p class="sec-desc">Toda operación inmobiliaria en TuMatch se clasifica en <strong>una de cuatro tipologías de cliente</strong>. Identificar la tipología correcta en los primeros minutos de interacción determina la estrategia, el lenguaje, las preguntas de calificación y los materiales técnicos que se deben preparar. Es la competencia base del corredor profesional.</p>
+    </div>
+
+    <div class="grid-2 aligned-cards" style="margin-bottom:28px">
+      <div class="card tipo-card" style="border-left:4px solid var(--coral)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--coralDk);margin-bottom:14px">Tipo 1 · Comprador Primera Vivienda</div>
+        <ul class="checklist">
+          <li><strong>Motor de decisión:</strong> Es hacer coincidir lo que busca con lo que puede comprar.</li>
+          <li><strong>Velocidad:</strong> 1 a 4 meses de proceso.</li>
+          <li><strong>Riesgo principal:</strong> Que no coincidan sus deseos con la viabilidad financiera.</li>
+          <li><strong>Gatillo de cierre:</strong> Confianza en la asesoría técnica y claridad del plan financiero.</li>
+          <li><strong>Pregunta de calificación:</strong> "¿Esta sería tu primera propiedad a tu nombre?"</li>
+        </ul>
+      </div>
+      <div class="card tipo-card" style="border-left:4px solid var(--gold)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--goldDk);margin-bottom:14px">Tipo 2 · Inversionista</div>
+        <ul class="checklist">
+          <li><strong>Motor de decisión:</strong> Rentabilidad esperada y crecimiento patrimonial.</li>
+          <li><strong>Velocidad:</strong> Días, una vez que el análisis financiero es favorable.</li>
+          <li><strong>Riesgo principal:</strong> Sobreprecio o rentabilidad neta insuficiente.</li>
+          <li><strong>Gatillo de cierre:</strong> Cap rate neto documentado y proyección de plusvalía.</li>
+          <li><strong>Pregunta de calificación:</strong> "¿Qué rentabilidad mínima requiere la operación para ser viable?"</li>
+        </ul>
+      </div>
+      <div class="card tipo-card" style="border-left:4px solid var(--capt-pink)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--capt-pinkDk);margin-bottom:14px">Tipo 3 · Cliente Vendedor</div>
+        <ul class="checklist">
+          <li><strong>Motor de decisión:</strong> Precio final de venta y percepción de gestión profesional.</li>
+          <li><strong>Velocidad:</strong> Variable según motivación y condiciones del mercado.</li>
+          <li><strong>Riesgo principal:</strong> Precio mal calibrado o corredor sin ejecución activa.</li>
+          <li><strong>Gatillo de cierre:</strong> Plan de marketing claro, estimación de precio con informe TuMatch y reportes sistemáticos.</li>
+          <li><strong>Pregunta de calificación:</strong> "¿Cuál es la motivación concreta detrás de la venta?"</li>
+        </ul>
+      </div>
+      <div class="card tipo-card" style="border-left:4px solid var(--teal)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--tealDk);margin-bottom:14px">Tipo 4 · Operación de arriendo</div>
+        <ul class="checklist">
+          <li><strong>Motor de decisión:</strong> Urgencia temporal en ambas partes (arrendador y arrendatario).</li>
+          <li><strong>Velocidad:</strong> 7 días el arrendatario, 15 días el arrendador.</li>
+          <li><strong>Riesgo principal:</strong> Arrendador: baja rentabilidad por cada día perdido sin arrendar. Arrendatario: rechazo en su evaluación comercial.</li>
+          <li><strong>Gatillo de cierre:</strong> Velocidad en la que el perfil del arrendatario sea aceptado.</li>
+          <li><strong>Pregunta de calificación:</strong> "¿En qué plazo requiere disponer de la propiedad?"</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="info-box pink tres-preguntas" style="margin-bottom:24px">
+      <span class="info-icon">🎯</span>
+      <div class="info-text"><strong>Tres preguntas para calificar al cliente en los primeros minutos:</strong> (1) ¿Qué operación está buscando realizar? · (2) ¿Ya tiene otra propiedad a su nombre? · (3) ¿Cuál es el plazo estimado para concretar la decisión? — Estas tres respuestas permiten clasificar correctamente a la mayoría de los clientes.</div>
+    </div>
+
+    <div class="info-box warn">
+      <span class="info-icon">⚠️</span>
+      <div class="info-text"><strong>Error frecuente en la asesoría inicial:</strong> aplicar un mismo enfoque a todas las tipologías. El lenguaje técnico adecuado para un inversionista (cap rate, rentabilidad neta, proyección) no es pertinente para un comprador de primera vivienda, que requiere asesoría en viabilidad financiera y educación sobre el producto hipotecario.</div>
+    </div>
+
+    <div id="quiz-2" class="quiz-gate"></div>
+  </div>
+</section>
+
+<!-- ===== MÓDULO 3 · Prospección y primer contacto ===== -->
+<section class="module" id="mod-3">
+  <div class="page">
+    <div class="sec-header">
+      <div class="sec-tag"><span class="dot"></span>Módulo 3 · Prospección y primer contacto</div>
+      <h2 class="sec-h2">De un contacto inicial a una reunión agendada</h2>
+      <p class="sec-desc">La prospección es la actividad comercial base del corredor. Este módulo entrega los criterios para abrir interacciones, calificar al contacto dentro de los primeros cinco minutos y cerrar cada conversación con un <em>próximo paso concreto y agendado</em>.</p>
+    </div>
+
+    <div class="sec-header" style="margin-top:10px;margin-bottom:16px">
+      <div class="sec-tag"><span class="dot"></span>Apertura según canal de origen</div>
+      <h2 class="sec-h2" style="font-size:28px">Adaptación del script al tipo de contacto</h2>
+    </div>
+
+    <div class="grid-3 aligned-cards" style="margin-bottom:28px">
+      <div class="tip-card">
+        <div class="tip-title">Contacto directo · red personal</div>
+        <div class="tip-text">"Hola [nombre], te comparto que me sumé al equipo de TuMatch Inmobiliario. ¿Conoces a alguien evaluando arrendar, comprar o vender en los próximos meses? Si aplica a tu propio caso, podemos conversarlo sin compromiso."</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-title">Contacto indirecto · conocidos</div>
+        <div class="tip-text">Reconexión previa sin agenda comercial. Retomar la relación en forma genuina y, una vez establecida la conversación, presentar el rol profesional como información complementaria.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-title">Lead digital · portal</div>
+        <div class="tip-text">Respuesta dentro de minutos. "Hola [nombre], gracias por su interés en la propiedad [referencia]. Antes de coordinar visita, necesito tres datos: zona de interés, plazo de decisión y modalidad de financiamiento o renta."</div>
+      </div>
+    </div>
+
+    <div class="sec-header" style="margin-top:20px;margin-bottom:16px">
+      <div class="sec-tag"><span class="dot"></span>Calificación en los primeros cinco minutos</div>
+      <h2 class="sec-h2" style="font-size:28px">Criterios de evaluación profesional</h2>
+    </div>
+
+    <div class="grid-2 aligned-cards" style="margin-bottom:28px">
+      <div class="card" style="border-left:4px solid var(--capt-pink)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--capt-pinkDk);margin-bottom:14px">Información a obtener</div>
+        <ul class="checklist">
+          <li>Tipo de operación (compra, venta, arriendo)</li>
+          <li>Plazo estimado de decisión</li>
+          <li>Zona y rango de presupuesto</li>
+          <li>Existencia de otra propiedad a su nombre</li>
+          <li>Decisores involucrados (pareja, socio, familia)</li>
+          <li>Experiencia previa con corredores inmobiliarios</li>
+        </ul>
+      </div>
+      <div class="card" style="border-left:4px solid var(--coral)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--coralDk);margin-bottom:14px">Conductas a evitar</div>
+        <ul class="checklist">
+          <li>Informar sobre comisiones sin que el cliente lo solicite</li>
+          <li>Solicitar datos sensibles antes de la reunión formal</li>
+          <li>Enviar volumen indiscriminado de propiedades</li>
+          <li>Ofrecer estimaciones de precio por encima del valor técnico para captar</li>
+          <li>Finalizar el contacto sin un próximo paso concreto</li>
+          <li>Aplicar interrogatorios antes de establecer la relación</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="info-box success regla-cierre" style="margin-bottom:24px">
+      <span class="info-icon">📞</span>
+      <div class="info-text"><strong>Regla de cierre de conversación:</strong> toda interacción debe concluir con una <strong>fecha y hora específica</strong> para el siguiente contacto. Las fórmulas abiertas como "le aviso" o "le envío información" no constituyen cierre profesional.</div>
+    </div>
+
+    <div class="info-box warn">
+      <span class="info-icon">💬</span>
+      <div class="info-text"><strong>Comunicación por WhatsApp.</strong> Saludo identificado, mensajes concisos, una pregunta por mensaje, uso limitado de audios en el primer contacto, respuesta dentro de los 30 minutos en horario laboral. La percepción de profesionalismo y velocidad es un factor directo de elección del corredor.</div>
+    </div>
+
+    <div id="quiz-3" class="quiz-gate"></div>
+  </div>
+</section>
+
+<!-- ===== MÓDULO 4 · Proceso de una operación ===== -->
+<section class="module" id="mod-4">
+  <div class="page">
+    <div class="sec-header">
+      <div class="sec-tag"><span class="dot"></span>Módulo 4 · Proceso de una operación</div>
+      <h2 class="sec-h2">Siete etapas · de la prospección a la postventa</h2>
+      <p class="sec-desc">Independientemente de la tipología de cliente, <strong>toda operación inmobiliaria transita por siete etapas estructuradas</strong>. Este marco permite identificar la etapa en curso, el documento que corresponde formalizar y el momento adecuado para activar al Team Leader.</p>
+    </div>
+
+    <div class="funnel" style="max-width:720px;margin-bottom:28px">
+      <div class="funnel-step funnel-s1">1 · Prospección<small>Activación de red, respuesta a leads, apertura de conversaciones · construcción de embudos</small></div>
+      <div class="funnel-step funnel-s2">2 · Reunión diagnóstica<small>Evaluación de necesidades, plazos, capacidad financiera, motivación y decisores</small></div>
+      <div class="funnel-step funnel-s3">3 · Estrategia<small>Estimación de Precio o análisis de rentabilidad según tipología · elaboración de plan y material</small></div>
+      <div class="funnel-step funnel-s4">4 · Acuerdo<small>Formalización: orden de visita, acuerdo de captación o reserva · registro en la plataforma</small></div>
+      <div class="funnel-step funnel-s5">5 · Ejecución<small>Publicación, muestras, búsqueda, negociación · ajustes coordinados con el TL si procede</small></div>
+      <div class="funnel-step funnel-s6">6 · Cierre<small>Contrato de arriendo, oferta y aceptación de oferta, escritura pública · facturación y pago de la comisión a las partes posterior a la firma de la escritura</small></div>
+      <div class="funnel-step funnel-s7">7 · Postventa<small>Solicitud de documentación · acompañamiento en firmas y entregas (incluida la firma de escritura, con fotografía en la entrega de llaves) · solicitud de referidos y fidelización del cliente</small></div>
+    </div>
+
+    <div class="sec-header" style="margin-top:10px;margin-bottom:16px">
+      <div class="sec-tag"><span class="dot"></span>Documentación por etapa</div>
+      <h2 class="sec-h2" style="font-size:28px">Instrumentos formales de la operación</h2>
+    </div>
+
+    <div class="grid-2 aligned-cards" style="margin-bottom:28px">
+      <div class="card" style="border-left:4px solid var(--gold)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--goldDk);margin-bottom:14px">Documentos del corredor</div>
+        <ul class="checklist">
+          <li><strong>Orden de visita:</strong> Firma previa a cada muestra · protege la gestión ante multicorretaje.</li>
+          <li><strong>Acuerdo de Captación:</strong> Asegura que el vendedor deba pagar la comisión a TuMatch y además habilita publicar la propiedad en el sistema TuMatch.</li>
+          <li><strong>Acuerdo de exclusividad (opcional):</strong> Plazo de 1 mes para arriendo y 5 meses para venta. Inversión mayor en marketing y dedicación del corredor.</li>
+          <li><strong>Reserva de arriendo:</strong> $100.000 no reembolsable por retracto del arrendatario, imputable a comisión.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-left:4px solid var(--capt-pink)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--capt-pinkDk);margin-bottom:14px">Documentos entre las partes</div>
+        <ul class="checklist">
+          <li><strong>Contrato de arriendo:</strong> Cierre del lado arrendador/arrendatario · plazo habitual 12 meses.</li>
+          <li><strong>Oferta y aceptación de oferta:</strong> Compromiso formal entre comprador y vendedor previo a la escritura.</li>
+          <li><strong>Escritura pública:</strong> Traspaso formal del dominio e inscripción en Conservador de Bienes Raíces.</li>
+          <li><strong>Acta de entrega:</strong> Estado de la propiedad e inventario al día de la entrega.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sec-header" style="margin-top:10px;margin-bottom:16px">
+      <div class="sec-tag"><span class="dot"></span>Tiempos esperados por tipología</div>
+      <h2 class="sec-h2" style="font-size:28px">Duración estimada del proceso</h2>
+    </div>
+
+    <div class="grid-3 aligned-cards" style="margin-bottom:28px">
+      <div class="tip-card">
+        <div class="tip-title">Arriendo · 1 a 3 semanas</div>
+        <div class="tip-text">El arrendatario suele decidir en aproximadamente 7 días. La documentación del perfil requiere 3 a 5 días adicionales. La firma de contrato se concreta en la segunda semana.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-title">Primera Vivienda · 1 a 4 meses</div>
+        <div class="tip-text">Proceso extendido por la gestión del crédito hipotecario, la evaluación de viabilidad financiera y la participación de decisores adicionales (pareja, familia).</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-title">Venta · 3 a 12 meses</div>
+        <div class="tip-text">Comprende captación, publicación multicanal, visitas, negociación, oferta y escritura. La absorción depende directamente del precio de lista alineado al mercado.</div>
+      </div>
+    </div>
+
+    <div class="info-box success" style="margin-bottom:24px">
+      <span class="info-icon">🤝</span>
+      <div class="info-text"><strong>Activación del Team Leader.</strong> Se recomienda escalar al TL ante negociaciones complejas, solicitudes del cliente fuera del proceso estándar, o cuando se requiera una segunda opinión técnica. El TL tiene incentivo directo en el cierre de cada negocio del equipo.</div>
+    </div>
+
+    <div class="info-box pink">
+      <span class="info-icon">📝</span>
+      <div class="info-text"><strong>Principio de trazabilidad.</strong> Sin documentos firmados y registrados, el pago de comisión no procede. La orden de visita, el acuerdo de captación y el contrato final constituyen los tres pilares formales de toda operación.</div>
+    </div>
+
+    <div id="quiz-4" class="quiz-gate"></div>
+  </div>
+</section>
+
+<!-- ===== MÓDULO 5 · Comprador Primera Vivienda ===== -->
+<section class="module" id="mod-5">
+  <div class="page">
+    <div class="sec-header">
+      <div class="sec-tag"><span class="dot"></span>Módulo 5 · Tipo 1 en profundidad</div>
+      <h2 class="sec-h2">Comprador Primera Vivienda · viabilidad financiera y asesoría técnica</h2>
+      <p class="sec-desc">Segmento con proceso extendido (<strong>1 a 4 meses</strong>) y ticket de referencia entre <strong>UF 2.800 y UF 3.500</strong> en RM. El riesgo central es comprometerse con un dividendo no sostenible dada la realidad del mercado hipotecario actual. El rol del corredor es <strong>asesorar en viabilidad real</strong>, no forzar la decisión de compra.</p>
+    </div>
+
+    <div class="info-box warn" style="margin-bottom:24px">
+      <span class="info-icon">📉</span>
+      <div class="info-text"><strong>Contexto actual del financiamiento.</strong> Las tasas hipotecarias en Chile se mantienen en niveles elevados respecto al histórico reciente, lo que produce dividendos altos para el comprador de primera vivienda. La asesoría profesional debe enfocarse en evaluar la viabilidad real de la operación, no en construir comparaciones forzadas entre dividendo y arriendo actual.</div>
+    </div>
+
+    <div class="grid-2 aligned-cards" style="margin-bottom:28px">
+      <div class="card tipo-card" style="border-left:4px solid var(--capt-pink)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--capt-pinkDk);margin-bottom:14px">Características del cliente</div>
+        <ul class="checklist stacked">
+          <li><strong>Primera decisión patrimonial</strong><span>Operación significativa para el cliente; primera vez que toma una decisión de este tamaño.</span></li>
+          <li><strong>Términos técnicos</strong><span>Conocimiento limitado: dividendo, pie, CAE, subsidio.</span></li>
+          <li><strong>Plazo de decisión</strong><span>Proceso extenso, con varias semanas o meses de evaluación.</span></li>
+          <li><strong>Criterio de elección</strong><span>Evalúa al corredor por credibilidad técnica y acompañamiento.</span></li>
+          <li><strong>Decisores adicionales</strong><span>Influencia de pareja o familia en la decisión final.</span></li>
+        </ul>
+      </div>
+      <div class="card tipo-card" style="border-left:4px solid var(--gold)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--goldDk);margin-bottom:14px">Competencias clave del corredor</div>
+        <ul class="checklist stacked">
+          <li><strong>Educación financiera aplicada</strong><span>Dividendo, pie, subsidios DS1/DS49, CAE y estructura del crédito hipotecario.</span></li>
+          <li><strong>Análisis del entorno</strong><span>Servicios, conectividad y plusvalía del sector.</span></li>
+          <li><strong>Gestión de expectativas</strong><span>Proceso de decisión extenso que requiere acompañamiento sistemático.</span></li>
+          <li><strong>Manejo de reuniones</strong><span>Coordinación con múltiples decisores (pareja, familia).</span></li>
+          <li><strong>Coordinación bancaria</strong><span>Cotización del crédito con ejecutivos del banco.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sec-header" style="margin-top:10px;margin-bottom:16px">
+      <div class="sec-tag"><span class="dot"></span>Herramientas profesionales</div>
+      <h2 class="sec-h2" style="font-size:28px">Uso técnico del simulador hipotecario</h2>
+    </div>
+
+    <div class="grid-3 aligned-cards" style="margin-bottom:28px">
+      <div class="tip-card">
+        <div class="tip-title">Transparencia financiera</div>
+        <div class="tip-text">El simulador se utiliza como herramienta de transparencia: se muestran los números reales (dividendo, pie, CAE, impuestos asociados) antes de generar expectativa sobre una propiedad específica.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-title">Escenarios reales de financiamiento</div>
+        <div class="tip-text">Se presentan múltiples escenarios (plazos, tasas vigentes, monto de pie variable) para que el cliente comprenda el rango de viabilidad con su perfil de ingresos.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-title">Evaluación de viabilidad</div>
+        <div class="tip-text">El objetivo de este simulador hipotecario es ayudar a estimar si la compra de una propiedad es viable según los ingresos actuales del cliente y las condiciones reales de financiamiento. La idea es trabajar con escenarios concretos y realistas, no con comparaciones con arriendo. Si el resultado muestra que la carga es muy alta o poco sostenible, lo recomendable es ajustar el presupuesto o ajustar el tipo de propiedad que se está buscando, para alinearlo a un escenario financieramente más adecuado.</div>
+      </div>
+    </div>
+
+    <div class="info-box success">
+      <span class="info-icon">🗣️</span>
+      <div class="info-text"><strong>Inicio de conversación sugerido:</strong> "Comprar su primera vivienda es un paso muy importante en su proyecto de vida. Para acompañarlo bien desde el comienzo, le propongo revisar su capacidad de financiamiento con las condiciones actuales del mercado. Así podremos definir un rango cómodo para usted y enfocar la búsqueda en opciones que realmente se ajusten a lo que necesita."</div>
+    </div>
+
+    <div class="sec-header" style="margin-top:30px;margin-bottom:16px">
+      <div class="sec-tag"><span class="dot"></span>Manejo profesional de objeciones</div>
+      <h2 class="sec-h2" style="font-size:28px">8 objeciones típicas y cómo manejarlas</h2>
+      <p class="sec-desc">El objetivo es informar con datos y transparencia, no forzar la decisión. Si la operación no es viable hoy, lo correcto es decirlo.</p>
+    </div>
+
+    <div class="objections-grid">
+      <div class="objection-card">
+        <div class="objection-card-head"><div class="objection-number">01</div><div><div class="objection-tag">Fase exploratoria</div><div class="objection-text">"Solo estoy viendo."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Es el momento adecuado para un primer diagnóstico financiero. Podemos evaluar su perfil de crédito y rango viable sin compromiso; cuando identifique una propiedad, la decisión estará informada con datos reales.</div>
+      </div>
+      <div class="objection-card">
+        <div class="objection-card-head"><div class="objection-number">02</div><div><div class="objection-tag">Incertidumbre de crédito</div><div class="objection-text">"No tengo certeza de que el banco me apruebe el crédito."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Ese es el primer paso antes de iniciar la búsqueda. Coordinamos cotizaciones en dos o tres bancos con los documentos básicos. El resultado define el rango de ticket viable y evita comprometer la operación con propiedades fuera de capacidad.</div>
+      </div>
+      <div class="objection-card">
+        <div class="objection-card-head"><div class="objection-number">03</div><div><div class="objection-tag">Dividendo elevado</div><div class="objection-text">"El dividendo proyectado es muy alto para mi flujo actual."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Las tasas hipotecarias actuales generan dividendos elevados, es una realidad del mercado. Revisemos escenarios: ajuste de ticket, mayor pie, plazos alternativos o aplicación de subsidio. Si ninguno es sostenible, diferir la operación es la decisión correcta.</div>
+      </div>
+      <div class="objection-card">
+        <div class="objection-card-head"><div class="objection-number">04</div><div><div class="objection-tag">Decisión grupal pendiente</div><div class="objection-text">"Mi pareja o familia aún no participa de la decisión."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Coordinemos una reunión donde participen todos los decisores. La información técnica y el análisis de viabilidad se comparten al mismo tiempo, lo que reduce iteraciones y acelera la definición.</div>
+      </div>
+      <div class="objection-card">
+        <div class="objection-card-head"><div class="objection-number">05</div><div><div class="objection-tag">Expectativa de baja</div><div class="objection-text">"Prefiero esperar a que los precios bajen."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Es una postura válida. Puedo compartir el comportamiento histórico de precios en la zona y el movimiento de tasas recientes. Con datos podemos definir si conviene esperar o si la combinación actual de tasa y precio hace viable la operación hoy.</div>
+      </div>
+      <div class="objection-card">
+        <div class="objection-card-head"><div class="objection-number">06</div><div><div class="objection-tag">Pie insuficiente</div><div class="objection-text">"No tengo el pie completo, ¿hay alternativas?"</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Los subsidios DS1 y DS49 pueden aportar al pie en rangos determinados. También existen productos con menor requerimiento de pie y condiciones distintas. Evaluemos qué aplica a su caso antes de descartar la operación.</div>
+      </div>
+      <div class="objection-card">
+        <div class="objection-card-head"><div class="objection-number">07</div><div><div class="objection-tag">Perfil independiente</div><div class="objection-text">"Soy trabajador independiente, dicen que es más complejo."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Los bancos evalúan independientes con declaración de renta SII del año anterior y movimientos bancarios. Es un proceso más documentado, no necesariamente más difícil. Cotizamos con bancos que tienen política más favorable al perfil independiente.</div>
+      </div>
+      <div class="objection-card">
+        <div class="objection-card-head"><div class="objection-number">08</div><div><div class="objection-tag">Arrendar vs comprar</div><div class="objection-text">"¿No conviene seguir arrendando en vez de comprometerme?"</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Es una decisión patrimonial legítima. Con las tasas actuales, el dividendo suele estar por sobre el arriendo equivalente. La compra tiene sentido con horizonte de largo plazo (5+ años), capacidad financiera estable y tolerancia al endeudamiento.</div>
+      </div>
+    </div>
+
+    <div id="quiz-5" class="quiz-gate"></div>
+  </div>
+</section>
+
+<!-- ===== MÓDULO 6 · Inversionista ===== -->
+<section class="module" id="mod-6">
+  <div class="page">
+    <div class="sec-header">
+      <div class="sec-tag"><span class="dot"></span>Módulo 6 · Tipo 2 en profundidad</div>
+      <h2 class="sec-h2">Inversionista · análisis financiero documentado</h2>
+      <p class="sec-desc">Perfil de decisión <strong>racional</strong> orientado a rentabilidad y patrimonio. Decide rápidamente cuando los indicadores son favorables y se detiene cuando no. Compara el activo inmobiliario contra otros instrumentos financieros y requiere <strong>análisis documentado</strong>, no solo argumentación.</p>
+    </div>
+
+    <div class="info-box warn" style="margin-bottom:24px">
+      <span class="info-icon">📐</span>
+      <div class="info-text"><strong>Indicadores técnicos que el corredor debe dominar.</strong> Cap rate bruto: <code>(arriendo mensual × 12) ÷ valor propiedad × 100</code>. Cap rate neto efectivo Santiago: <code>bruto × (1 − 0,22 a 0,28)</code> ≈ <strong>3% a 4,5%</strong>. Datos RM 2025: cap rate bruto entre <strong>4,8% y 7,2%</strong>; los departamentos de 1 y 2 dormitorios representan el 77% de las transacciones.</div>
+    </div>
+
+    <div class="grid-2 aligned-cards" style="margin-bottom:28px">
+      <div class="card tipo-card" style="border-left:4px solid var(--gold)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--goldDk);margin-bottom:14px">Perfil del inversionista</div>
+        <ul class="checklist">
+          <li>Decisión orientada a rentabilidad y patrimonio.</li>
+          <li>Riesgo central: sobreprecio o rentabilidad neta insuficiente.</li>
+          <li>Velocidad de cierre alta cuando los indicadores son favorables.</li>
+          <li>Comparación activa con otros instrumentos financieros.</li>
+          <li>Uso de análisis de rentabilidad con propuesta para cliente inversionista.</li>
+        </ul>
+      </div>
+      <div class="card tipo-card" style="border-left:4px solid var(--capt-pink)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--capt-pinkDk);margin-bottom:14px">Competencias técnicas requeridas</div>
+        <ul class="checklist">
+          <li>Cálculo preciso de cap rate bruto y neto.</li>
+          <li>Conocimiento de tasa de vacancia y precios de arriendo por zona.</li>
+          <li>Elaboración del análisis de rentabilidad con la herramienta del CRM TuMatch.</li>
+          <li>Identificación de stock con potencial de inversión (1-2D, zonas con demanda).</li>
+          <li>Comparación fundamentada con otros instrumentos financieros.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sec-header" style="margin-top:10px;margin-bottom:16px">
+      <div class="sec-tag"><span class="dot"></span>Herramienta del CRM TuMatch</div>
+      <h2 class="sec-h2" style="font-size:28px">Análisis de Rentabilidad Inmobiliaria</h2>
+      <p class="sec-desc">El CRM TuMatch incluye un módulo de análisis de rentabilidad listo para presentar al cliente inversionista. Permite simular escenarios, ajustar variables y entregar una propuesta documentada con los indicadores clave que el inversionista necesita para decidir.</p>
+    </div>
+
+    <div class="grid-3 aligned-cards" style="margin-bottom:28px">
+      <div class="tip-card">
+        <div class="tip-title">Activos y panel de control</div>
+        <div class="tip-text">Configuración del activo (precio UF, arriendo, m², tipología, estacionamientos, bodegas) y panel de control con pie inicial, bono pie, plusvalía anual, tasa de interés, plazo del crédito, horizonte de inversión y gastos operacionales.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-title">Indicadores clave</div>
+        <div class="tip-text">ROI Total, CAP Rate, Cash on Cash, Cash Flow mensual, Payback, NOI anual y dividendo. Cada indicador se clasifica automáticamente como Bueno, Regular o Bajo para apoyar la conversación con el cliente.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-title">Proyección a 10 años</div>
+        <div class="tip-text">Gráficos de proyección de plusvalía y crecimiento patrimonial, más una tabla año a año con valor de propiedad, capital amortizado, cash flow acumulado, deuda restante y patrimonio. La propuesta se exporta y se entrega al cliente.</div>
+      </div>
+    </div>
+
+    <div class="sec-header" style="margin-top:10px;margin-bottom:16px">
+      <div class="sec-tag"><span class="dot"></span>Manejo profesional de objeciones</div>
+      <h2 class="sec-h2" style="font-size:28px">8 objeciones típicas y cómo manejarlas</h2>
+      <p class="sec-desc">El inversionista responde a datos verificables. Las respuestas se construyen con cap rate, plusvalía, tasa de vacancia y comparables concretos.</p>
+    </div>
+
+    <div class="objections-grid">
+      <div class="objection-card variant-gold">
+        <div class="objection-card-head"><div class="objection-number">01</div><div><div class="objection-tag">Rentabilidad baja</div><div class="objection-text">"La rentabilidad presentada es baja para mi expectativa."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>La exigencia es razonable. Corresponde distinguir cap rate bruto de neto efectivo: RM 2025 se sitúa entre 4,8% y 7,2% bruto, con neto efectivo entre 3% y 4,5%. Revisemos retorno total a 5 y 10 años incluyendo plusvalía proyectada.</div>
+      </div>
+      <div class="objection-card variant-gold">
+        <div class="objection-card-head"><div class="objection-number">02</div><div><div class="objection-tag">Instrumentos alternativos</div><div class="objection-text">"Prefiero un fondo mutuo o renta variable."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Son instrumentos complementarios. Las ventajas diferenciales del activo inmobiliario son tangibilidad, flujo mensual estable y apalancamiento vía crédito. Podemos comparar retornos reales ajustados por riesgo con datos actuales.</div>
+      </div>
+      <div class="objection-card variant-gold">
+        <div class="objection-card-head"><div class="objection-number">03</div><div><div class="objection-tag">Precio de entrada</div><div class="objection-text">"El mercado está caro, prefiero esperar."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>La postura es válida. Cuantifiquemos el costo de oportunidad: una propiedad con cap rate 5% genera flujo mientras se espera, y la plusvalía no realizada también constituye costo. Revisemos el punto de entrada óptimo con análisis de escenarios.</div>
+      </div>
+      <div class="objection-card variant-gold">
+        <div class="objection-card-head"><div class="objection-number">04</div><div><div class="objection-tag">Conocimiento de zona</div><div class="objection-text">"No conozco los fundamentos de esa zona."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Adjunto antecedentes técnicos: tasa de vacancia, precio promedio de arriendo y tendencia de plusvalía a 3 y 5 años. La decisión de inversión se fundamenta en datos verificables, no en intuición.</div>
+      </div>
+      <div class="objection-card variant-gold">
+        <div class="objection-card-head"><div class="objection-number">05</div><div><div class="objection-tag">Tiempo de análisis</div><div class="objection-text">"Necesito más tiempo para analizar la operación."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>El tiempo es razonable. Identifiquemos qué variable específica requiere profundización: si es el indicador financiero, lo revisamos con el simulador; si es el activo o la zona, coordino una visita técnica esta semana.</div>
+      </div>
+      <div class="objection-card variant-gold">
+        <div class="objection-card-head"><div class="objection-number">06</div><div><div class="objection-tag">Vacancia proyectada</div><div class="objection-text">"¿Y si la propiedad queda sin arrendatario durante meses?"</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>La vacancia es un costo real que debe modelarse. En el análisis incluyo una vacancia conservadora (1 mes/año) que reduce el cap rate efectivo. Para esta zona, el tiempo promedio de colocación es menor al estándar y la demanda se mantiene estable.</div>
+      </div>
+      <div class="objection-card variant-gold">
+        <div class="objection-card-head"><div class="objection-number">07</div><div><div class="objection-tag">Tasas hipotecarias</div><div class="objection-text">"Con estas tasas, el crédito destruye la rentabilidad."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Es verdad, la tasa hoy presiona el flujo de caja. Pero recuerda esto: las tasas de interés se pueden renegociar en el futuro, pero el precio de compra no. Si esperamos a que las tasas bajen, la demanda subirá y los precios de las propiedades probablemente también. Entrar ahora con un crédito moderado te permite asegurar el precio de hoy; si las tasas bajan mañana, refinanciamos y tu rentabilidad explota.</div>
+      </div>
+      <div class="objection-card variant-gold">
+        <div class="objection-card-head"><div class="objection-number">08</div><div><div class="objection-tag">Liquidez del activo</div><div class="objection-text">"El inmobiliario es ilíquido, prefiero algo que pueda retirar."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>La observación es correcta: el tiempo de venta varía entre 3 y 12 meses según segmento. Si la prioridad es liquidez inmediata, el inmobiliario no es el instrumento adecuado. Si el horizonte es 5-10 años, la iliquidez es asumible frente al retorno total.</div>
+      </div>
+    </div>
+
+    <div id="quiz-6" class="quiz-gate"></div>
+  </div>
+</section>
+
+<!-- ===== MÓDULO 7 · Cliente Vendedor ===== -->
+<section class="module" id="mod-7">
+  <div class="page">
+    <div class="sec-header">
+      <div class="sec-tag"><span class="dot"></span>Módulo 7 · Tipo 3 en profundidad</div>
+      <h2 class="sec-h2">Cliente Vendedor · calibración de precio y plan de gestión</h2>
+      <p class="sec-desc">Busca maximizar el precio final de venta. Asocia alto valor afectivo a la propiedad, lo que puede distorsionar la expectativa de precio. Los dos riesgos que evalúa son <strong>precio mal calibrado</strong> y <strong>corredor sin ejecución activa</strong>. La decisión se fundamenta en credibilidad técnica y claridad del plan.</p>
+    </div>
+
+    <div class="info-box warn" style="margin-bottom:24px">
+      <span class="info-icon">📊</span>
+      <div class="info-text">El mercado inmobiliario actual en Santiago exige precisión. Para propiedades sobre las <strong>UF 4.000</strong>, el tiempo promedio de venta se sitúa en los <strong>15 meses</strong> (CChC). Ante este escenario, un precio de lista fuera de rango no solo extiende la espera, sino que <strong>"quema" el activo</strong> frente a los compradores potenciales. El rol del corredor es evitar el desgaste de su propiedad mediante una calibración técnica del precio, asegurando que la inversión (basada en la comisión estándar del <strong>2% + IVA por parte</strong>) se traduzca en una venta ágil y al mejor valor de mercado posible.</div>
+    </div>
+
+    <div class="sec-header" style="margin-top:10px;margin-bottom:16px">
+      <div class="sec-tag"><span class="dot"></span>Embudo de captación · siete etapas oficiales</div>
+      <h2 class="sec-h2" style="font-size:28px">Del primer contacto al cierre de la venta</h2>
+    </div>
+
+    <div class="funnel" style="max-width:720px;margin-bottom:24px">
+      <div class="funnel-step funnel-s1">1 · Contacto<small>Primer contacto con el propietario y coordinación de reunión presencial. Levantar información básica sobre la propiedad: tipología, metros cuadrados y ubicación</small></div>
+      <div class="funnel-step funnel-s2">2 · Reunión<small>Antes de visitar la propiedad se revisa el valor estimado según la información recopilada en el primer contacto. Visita a la propiedad, evaluación de expectativas y motivación real de venta</small></div>
+      <div class="funnel-step funnel-s3">3 · Estimación de Precio<small>Análisis de Estimación de Precio (AEP) · definición de precio objetivo, precio de publicación (precio de lista) y precio mínimo de venta</small></div>
+      <div class="funnel-step funnel-s4">4 · Acuerdo<small>Modalidad (exclusiva o abierta), plazo y estructura de comisión</small></div>
+      <div class="funnel-step funnel-s5">5 · Captada<small>Acuerdo de Captación firmado · cambios en perfil del cliente en embudo de venta · activación del plan de marketing</small></div>
+      <div class="funnel-step funnel-s6">6 · Publicada<small>Fotografía, video, descripción técnica y publicación multicanal</small></div>
+      <div class="funnel-step funnel-s7">7 · Vendida<small>Oferta y aceptación de oferta (cierre de negocio firmado), escritura pública y facturación de comisión</small></div>
+    </div>
+
+    <div class="grid-2 aligned-cards" style="margin-bottom:28px">
+      <div class="card tipo-card" style="border-left:4px solid var(--capt-pink)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--capt-pinkDk);margin-bottom:14px">Competencias clave</div>
+        <ul class="checklist">
+          <li><strong>Análisis de Estimación de Precio (AEP):</strong> Elaborado con comparables antes de la reunión inicial.</li>
+          <li><strong>Distinción de valor:</strong> Diferenciar valor afectivo del valor comercial.</li>
+          <li><strong>Manejo técnico del acuerdo de captación:</strong> Modalidad exclusiva o abierta.</li>
+          <li><strong>Plan de marketing documentado:</strong> Portales, fotografía, video y redes.</li>
+          <li><strong>Reportes periódicos al propietario:</strong> Con cadencia definida.</li>
+        </ul>
+      </div>
+      <div class="card tipo-card" style="border-left:4px solid var(--gold)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--goldDk);margin-bottom:14px">Canales de publicación oficiales</div>
+        <ul class="checklist">
+          <li><strong>Portal Inmobiliario y MercadoLibre:</strong> Misma empresa y volumen más alto de tráfico de leads del mercado.</li>
+          <li><strong>Proppit:</strong> Distribución agregada hacia portales especializados.</li>
+          <li><strong>Enlace Inmobiliario:</strong> Portal profesional entre corredores.</li>
+          <li><strong>Yapo:</strong> Tráfico amplio y audiencia heterogénea.</li>
+          <li><strong>TuMatch Propiedades:</strong> Portal donde los corredores pueden buscar canje de propiedades para acelerar la venta.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sec-header" style="margin-top:10px;margin-bottom:16px">
+      <div class="sec-tag"><span class="dot"></span>Manejo profesional de objeciones</div>
+      <h2 class="sec-h2" style="font-size:28px">Ocho casos frecuentes · construcción de confianza</h2>
+      <p class="sec-desc">Las objeciones del vendedor combinan factores racionales (precio, comisión) y emocionales (valor afectivo). La respuesta profesional separa ambos.</p>
+    </div>
+
+    <div class="objections-grid">
+      <div class="objection-card variant-pink">
+        <div class="objection-card-head"><div class="objection-number">01</div><div><div class="objection-tag">Autopublicación</div><div class="objection-text">"Prefiero publicarla directamente en un portal."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Es una alternativa válida. La gestión profesional incluye filtrado de interesados, coordinación de visitas, negociación técnica y acompañamiento hasta escritura. Mi trabajo permite al propietario mantener su agenda y evitar errores de proceso.</div>
+      </div>
+      <div class="objection-card variant-pink">
+        <div class="objection-card-head"><div class="objection-number">02</div><div><div class="objection-tag">Comisión</div><div class="objection-text">"La comisión me parece elevada."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>La comisión retribuye Análisis de Estimación de Precio, plan de marketing, filtrado de compradores, coordinación de visitas, negociación y acompañamiento legal. Evaluemos el costo del tiempo y del riesgo de error en cada una de esas etapas si se gestiona directamente.</div>
+      </div>
+      <div class="objection-card variant-pink">
+        <div class="objection-card-head"><div class="objection-number">03</div><div><div class="objection-tag">Precio estimado</div><div class="objection-text">"El precio del Análisis de Estimación de Precio es inferior a mi expectativa."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>El Análisis de Estimación de Precio (AEP) se elabora con comparables reales de propiedades efectivamente transadas en la zona. Un precio de lista sobre mercado reduce visitas y erosiona la percepción del activo. El precio objetivo se construye con datos, no con expectativa.</div>
+      </div>
+      <div class="objection-card variant-pink">
+        <div class="objection-card-head"><div class="objection-number">04</div><div><div class="objection-tag">Corredor sin comisión</div><div class="objection-text">"Otro corredor ofreció publicar sin cobrarme comisión."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Corresponde preguntar cuál es el modelo de ingreso de ese corredor en esa operación. Un corredor sin incentivo económico sobre la propiedad tiende a priorizar otras captaciones en su cartera. El incentivo profesional alinea prioridades.</div>
+      </div>
+      <div class="objection-card variant-pink">
+        <div class="objection-card-head"><div class="objection-number">05</div><div><div class="objection-tag">Experiencia previa</div><div class="objection-text">"Tuve experiencias poco satisfactorias con corredores."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Es una precaución válida. Trabajo con un proceso documentado: plan escrito, reportes periódicos y canales de comunicación definidos. Usted mantiene visibilidad completa sobre acciones, plazos y resultados en cada etapa.</div>
+      </div>
+      <div class="objection-card variant-pink">
+        <div class="objection-card-head"><div class="objection-number">06</div><div><div class="objection-tag">Exclusividad</div><div class="objection-text">"No quiero firmar exclusividad, prefiero tener varios corredores."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Ambas modalidades son válidas. La exclusividad permite inversión mayor en marketing (fotografía profesional, video, campañas) y seguimiento más intensivo. Sin exclusividad, se mantiene cartera abierta con inversión estándar. Evaluemos qué modalidad ajusta mejor al plazo de venta.</div>
+      </div>
+      <div class="objection-card variant-pink">
+        <div class="objection-card-head"><div class="objection-number">07</div><div><div class="objection-tag">Tiempo de venta</div><div class="objection-text">"¿Cuánto se demora en venderse una propiedad como la mía?"</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>El tiempo de absorción depende del precio de lista y del segmento. En propiedades sobre UF 4.000 en Santiago, el promedio del mercado se ubica cercano a 15 meses (CChC 2024), con segmentos puntuales que pueden extenderse más. Con precio alineado al mercado y plan adecuado, este plazo se reduce significativamente. Le entrego proyección según su caso.</div>
+      </div>
+      <div class="objection-card variant-pink">
+        <div class="objection-card-head"><div class="objection-number">08</div><div><div class="objection-tag">Ofertas bajas</div><div class="objection-text">"Están llegando ofertas muy por debajo del precio de lista."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Las ofertas repetidas bajo precio pueden indicar dos cosas: el precio de lista está por sobre mercado, o el tipo de comprador que atrae la publicación no es el adecuado. Revisemos ambas variables antes de decidir si ajustar precio o replantear el segmento de marketing.</div>
+      </div>
+    </div>
+
+    <div id="quiz-7" class="quiz-gate"></div>
+  </div>
+</section>
+
+<!-- ===== MÓDULO 8 · Operación Arriendo ===== -->
+<section class="module" id="mod-8">
+  <div class="page">
+    <div class="sec-header">
+      <div class="sec-tag"><span class="dot"></span>Módulo 8 · Tipo 4 en profundidad</div>
+      <h2 class="sec-h2">Operación de arriendo · urgencia y gestión dual</h2>
+      <p class="sec-desc">La operación involucra <strong>dos perfiles simultáneos</strong>: arrendador y arrendatario, con incentivos alineados hacia un cierre rápido. La vida útil del lead es de aproximadamente <strong>7 días</strong>; la velocidad de respuesta es determinante para el resultado. Aproximadamente el <strong>33% de los hogares en el Gran Santiago</strong> corresponden a arrendatarios.</p>
+    </div>
+
+    <div class="info-box warn" style="margin-bottom:24px">
+      <span class="info-icon">💰</span>
+      <div class="info-text"><strong>Estructura de comisión en arriendo (2026).</strong> 50% + IVA cobrado a <strong>cada parte por separado</strong>, con boleta o factura independiente. Equivalente al primer mes de renta. <strong>Reserva de $100.000 no reembolsable</strong> por retracto del arrendatario, imputable a comisión.</div>
+    </div>
+
+    <div class="info-box pink" style="margin-bottom:24px">
+      <span class="info-icon">🔒</span>
+      <div class="info-text"><strong>Protocolo de canal único en arriendo.</strong> Arrendador y arrendatario no se comunican directamente durante la gestión: los números de contacto no se comparten entre partes y toda coordinación transita por el corredor. Este protocolo protege la comisión y garantiza la calidad del servicio.</div>
+    </div>
+
+    <div class="grid-2 aligned-cards" style="margin-bottom:28px">
+      <div class="card tipo-card" style="border-left:4px solid var(--teal)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--tealDk);margin-bottom:14px">Perfil del arrendatario</div>
+        <ul class="checklist stacked">
+          <li><strong>Alta urgencia</strong><span>Búsqueda de disponibilidad inmediata.</span></li>
+          <li><strong>Vida útil del lead</strong><span>Aproximadamente 7 días.</span></li>
+          <li><strong>Preocupación principal</strong><span>Rechazo en la evaluación de antecedentes.</span></li>
+          <li><strong>Ratio recomendado</strong><span>Arriendo = 30-35% del ingreso líquido.</span></li>
+          <li><strong>Documentación dependiente e independiente</strong><span>Siempre certificado Dicom o de deudas CMF, certificado de cotizaciones, liquidaciones y cédula. Para independiente, además: carpeta tributaria, carnet y balance.</span></li>
+        </ul>
+      </div>
+      <div class="card tipo-card" style="border-left:4px solid var(--capt-pink)">
+        <div style="font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--capt-pinkDk);margin-bottom:14px">Perfil del arrendador</div>
+        <ul class="checklist stacked">
+          <li><strong>Interés en colocar la propiedad</strong><span>Con candidato confiable.</span></li>
+          <li><strong>Preocupación principal</strong><span>Morosidad, daños o vacancia prolongada.</span></li>
+          <li><strong>Urgencia alta</strong><span>Cada día que pasa sin arrendar es dinero que el cliente deja de percibir; promociones y otras herramientas se aprenden a usar al operar como freelance en TuMatch.</span></li>
+          <li><strong>Filtrado previo del corredor</strong><span>Solo candidatos calificados llegan a evaluación.</span></li>
+          <li><strong>Reportes valorados</strong><span>Proceso de selección y postulantes descartados.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="star-profile-card" style="margin-bottom:24px">
+      <h4>Documentación mínima para perfil estrella ★ del arrendatario</h4>
+      <ul>
+        <li>Cédula de identidad vigente (ambos lados, legible)</li>
+        <li>Últimas tres liquidaciones de sueldo (o F22/boletas si es independiente)</li>
+        <li>Certificado de AFP con las tres últimas cotizaciones</li>
+        <li>Contrato de trabajo vigente</li>
+        <li>Referencias laborales verificables</li>
+        <li>Informe Dicom o score crediticio</li>
+        <li>Orden de visita firmada</li>
+        <li>Aval calificado (cuando el arrendador lo requiere)</li>
+      </ul>
+    </div>
+
+    <div class="sec-header" style="margin-top:10px;margin-bottom:16px">
+      <div class="sec-tag"><span class="dot"></span>Manejo profesional de objeciones</div>
+      <h2 class="sec-h2" style="font-size:28px">Ocho casos frecuentes · cuatro por lado</h2>
+      <p class="sec-desc">Las objeciones aparecen en ambas partes. La clave es responder con los protocolos del proceso de arriendo (documentación, reserva, filtrado).</p>
+    </div>
+
+    <div class="objections-grid">
+      <div class="objection-card variant-teal">
+        <div class="objection-card-head"><div class="objection-number">A1</div><div><div class="objection-tag">Arrendatario · visita previa</div><div class="objection-text">"¿Puedo visitar antes de entregar documentos?"</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>La visita es el primer paso. Para coordinarla requiero confirmar que el perfil se ajusta a las condiciones del arrendador. Una pregunta breve sobre su situación de ingresos permite optimizar la coordinación y no hacerle perder tiempo.</div>
+      </div>
+      <div class="objection-card variant-teal">
+        <div class="objection-card-head"><div class="objection-number">A2</div><div><div class="objection-tag">Arrendatario · independiente</div><div class="objection-text">"Como independiente me piden mucha documentación adicional."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Es práctica habitual. El expediente sólido se construye con declaración de renta SII del año anterior y tres meses de movimientos bancarios. Esa documentación respalda la capacidad de pago ante el arrendador.</div>
+      </div>
+      <div class="objection-card variant-teal">
+        <div class="objection-card-head"><div class="objection-number">A3</div><div><div class="objection-tag">Arrendatario · precio</div><div class="objection-text">"El valor del arriendo excede mi rango."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Puedo buscar alternativas dentro de su rango. ¿Cuál es el valor máximo disponible según su flujo? Evaluamos propiedades en la misma zona o en sectores adyacentes con conectividad equivalente.</div>
+      </div>
+      <div class="objection-card variant-teal">
+        <div class="objection-card-head"><div class="objection-number">A4</div><div><div class="objection-tag">Arrendatario · aval</div><div class="objection-text">"El arrendador pide aval con propiedad, no tengo quién."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Podemos evaluar alternativas: garantía adicional (1-2 meses extra), seguro de arriendo, o presentación con carta de referencia laboral sólida. No todos los arrendadores exigen aval si el perfil de ingresos es robusto y documentado.</div>
+      </div>
+      <div class="objection-card variant-pink">
+        <div class="objection-card-head"><div class="objection-number">B1</div><div><div class="objection-tag">Arrendador · gestión directa</div><div class="objection-text">"Prefiero gestionar el arriendo por mi cuenta."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Es una alternativa válida. El valor de la gestión profesional está en el filtrado previo: verificación de ingresos, revisión documental y descarte de postulantes sin perfil. Este filtro reduce significativamente el riesgo de morosidad.</div>
+      </div>
+      <div class="objection-card variant-pink">
+        <div class="objection-card-head"><div class="objection-number">B2</div><div><div class="objection-tag">Arrendador · comisión</div><div class="objection-text">"La comisión me parece alta."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>La comisión equivale a medio mes de arriendo (50% + IVA), estándar del mercado. Una colocación dos semanas antes del plazo alternativo compensa parcialmente el costo. El costo de un arrendatario moroso es significativamente mayor.</div>
+      </div>
+      <div class="objection-card variant-pink">
+        <div class="objection-card-head"><div class="objection-number">B3</div><div><div class="objection-tag">Arrendador · experiencia previa</div><div class="objection-text">"Tuve problemas con arrendatarios previos."</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Esa experiencia justifica un proceso estructurado desde el inicio. Mi proceso incluye verificación de ingresos, revisión de referencias y documentación completa antes de la visita, lo que reduce la probabilidad de incidencias.</div>
+      </div>
+      <div class="objection-card variant-pink">
+        <div class="objection-card-head"><div class="objection-number">B4</div><div><div class="objection-tag">Arrendador · plazo de publicación</div><div class="objection-text">"Ya lleva publicado varios días, ¿por qué no hay postulantes calificados?"</div></div></div>
+        <div class="objection-response"><span class="objection-response-label">Manejo de objeciones</span>Revisemos dos variables: precio de lista respecto al mercado (si está sobre, atrae postulantes de menor perfil) y especificaciones del aviso (fotos, descripción, atributos destacados). Con ajuste acotado en cualquiera de las dos, el volumen de postulantes calificados mejora.</div>
+      </div>
+    </div>
+
+    <div id="quiz-8" class="quiz-gate"></div>
+  </div>
+</section>
+
+<!-- ===== MÓDULO 9 · Red · 30 contactos y próximos pasos ===== -->
+<section class="module" id="mod-9">
+  <div class="page">
+    <div class="sec-header">
+      <div class="sec-tag"><span class="dot"></span>Módulo 9 · Activación de red y próximos pasos</div>
+      <h2 class="sec-h2">Red profesional, embudos iniciales y ruta de desarrollo</h2>
+      <p class="sec-desc">La red de contactos es el principal activo comercial del corredor. Los primeros negocios suelen originarse en el círculo cercano. Este módulo entrega el marco para activar treinta contactos iniciales y presenta la ruta de especialización posterior al onboarding.</p>
+    </div>
+
+    <div class="sec-header" style="margin-top:10px;margin-bottom:16px">
+      <div class="sec-tag"><span class="dot"></span>Clasificación de contactos · círculos de red</div>
+      <h2 class="sec-h2" style="font-size:28px">Criterios para segmentar la red</h2>
+    </div>
+
+    <div class="grid-3 aligned-cards" style="margin-bottom:28px">
+      <div class="tip-card" style="border-top:4px solid var(--capt-pink)">
+        <div class="tip-title">Caliente · vínculo directo</div>
+        <div class="tip-text">Familia y amigos cercanos. Relación de confianza preexistente. <strong>Mayor tasa de conversión</strong>, cercana a una de cada tres conversaciones. Punto de partida habitual del embudo inicial.</div>
+      </div>
+      <div class="tip-card" style="border-top:4px solid var(--gold)">
+        <div class="tip-title">Tibio · conocidos</div>
+        <div class="tip-text">Contactos con los que existe trato previo pero sin conocimiento del rol profesional actual. Requiere validación mediante credenciales y casos concretos. Tasa de conversión aproximada: 1 de cada 10.</div>
+      </div>
+      <div class="tip-card" style="border-top:4px solid var(--teal)">
+        <div class="tip-title">Frío · leads externos</div>
+        <div class="tip-text">Contactos sin relación previa, originados en portales o campañas digitales. Requiere script definido, alta velocidad de respuesta y procesos sistematizados. Tasa aproximada: 1 de cada 40.</div>
+      </div>
+    </div>
+
+    <div class="info-box success" style="margin-bottom:28px">
+      <span class="info-icon">🎯</span>
+      <div class="info-text"><strong>Embudo de activación · treinta contactos iniciales.</strong> De 30 contactos activados se estiman <strong>10 conversaciones efectivas</strong>, <strong>4 citas agendadas</strong> y <strong>1 a 2 negocios cerrados</strong>. El embudo inicial requiere volumen para producir resultados consistentes.</div>
+    </div>
+
+    <div class="sec-header" style="margin-top:20px;margin-bottom:16px">
+      <div class="sec-tag"><span class="dot"></span>Ecosistema de alianzas TuMatch</div>
+      <h2 class="sec-h2" style="font-size:28px">Soporte al trabajo del corredor</h2>
+    </div>
+
+    <div class="grid-3 aligned-cards" style="margin-bottom:28px">
+      <div class="tip-card">
+        <div class="tip-title">🧰 CRM TuMatch + Academia</div>
+        <div class="tip-text">CRM con múltiples funciones, documentos y herramientas para operar a los clientes, más una academia interna para el progreso continuo del corredor.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-title">🏦 Instituciones financieras</div>
+        <div class="tip-text">Ejecutivos bancarios para gestión de créditos hipotecarios y cotizaciones técnicas para los compradores.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-title">🏗️ Inmobiliarias y constructoras</div>
+        <div class="tip-text">Stock nuevo y en verde para compradores de primera vivienda e inversionistas.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-title">⚖️ Estudio jurídico</div>
+        <div class="tip-text">Elaboración de contratos, escrituras, posesiones efectivas y revisión documental de propiedades.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-title">📸 Producción audiovisual</div>
+        <div class="tip-text">Fotografía y video profesional para publicaciones en portales y redes sociales.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-title">🌐 Portales inmobiliarios</div>
+        <div class="tip-text">Proppit, Portal Inmobiliario, MercadoLibre, Enlace Inmobiliario, Yapo y TuMatch Propiedades, con republicación automática desde una sola carga.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-title">🤝 Red de corredores TuMatch</div>
+        <div class="tip-text">Comunidad interna para stock compartido, negocios colaborativos y derivación de leads.</div>
+      </div>
+    </div>
+
+    <div class="sec-header" style="margin-top:20px;margin-bottom:16px">
+      <div class="sec-tag"><span class="dot"></span>Ruta de desarrollo profesional posterior al onboarding</div>
+      <h2 class="sec-h2" style="font-size:28px">De Corredor Asociado a Corredor Experto</h2>
+    </div>
+
+    <div class="funnel" style="max-width:680px;margin-bottom:24px">
+      <div class="funnel-step funnel-s1">1 · Certificación del onboarding<small>Aprobación de la prueba final con 16/20 correctas (80%)</small></div>
+      <div class="funnel-step funnel-s2">2 · Activación profesional<small>Firma del Contrato de Corredor Asociado · asignación de Team Leader por zona</small></div>
+      <div class="funnel-step funnel-s3">3 · Experiencia práctica<small>Primeros negocios junto al TL · consolidación de competencias operativas</small></div>
+      <div class="funnel-step funnel-s4">4 · Especialización por Tipo Cliente<small>Cursos básicos y avanzados por tipo de cliente, con certificaciones dentro de la academia</small></div>
+      <div class="funnel-step funnel-s5">5 · Corredor Experto TuMatch<small>Autonomía profesional y posibilidad de liderar equipo propio como TL</small></div>
+    </div>
+
+    <div class="info-box pink">
+      <span class="info-icon">📘</span>
+      <div class="info-text"><strong>El onboarding es el punto de partida.</strong> La formación de un corredor experto requiere experiencia práctica sostenida y especialización técnica por tipología de cliente. TuMatch dispone de programas avanzados posteriores a este onboarding, enfocados en profundizar cada tipo de operación.</div>
+    </div>
+
+    <div id="quiz-9" class="quiz-gate"></div>
+  </div>
+</section>
+
+<!-- ===== PRUEBA FINAL ===== -->
+<section class="module" id="mod-final">
+  <div class="page">
+    <div class="sec-header">
+      <div class="sec-tag"><span class="dot"></span>Prueba final · Certificación Corredor Freelance</div>
+      <h2 class="sec-h2">20 preguntas · 16/20 para certificarse (80%)</h2>
+      <p class="sec-desc">La prueba final consta de <strong>20 preguntas extraídas al azar de un banco de 80</strong>. El orden de las preguntas y el orden de las alternativas se aleatoriza en cada rendición. Al finalizar se informa únicamente el <strong>puntaje</strong>: las respuestas incorrectas no se detallan. En caso de reprobación, el sistema aplica un bloqueo de 5 minutos antes de permitir un nuevo intento.</p>
+    </div>
+    <div id="quiz-final" class="quiz-gate"></div>
+  </div>
+</section>
+
+<!-- ===== CIERRE · CERTIFICADO ===== -->
+<section class="module" id="mod-done">
+  <div class="page">
+    <div id="done-content"></div>
+  </div>
+</section>
+
+<footer style="background:var(--ui-surface-soft);border-top:1px solid var(--ui-border-soft);padding:28px 20px;text-align:center;font-family:'EB Garamond',serif;font-size:14px;color:var(--ui-text-soft);line-height:1.6">
+  <div style="max-width:720px;margin:0 auto">
+    <strong style="color:var(--ui-text);font-family:'Cinzel',serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:800">TuMatch Inmobiliario</strong><br>
+    Academia de Corredores · Onboarding Corredor Freelance 2026 · Documento interno<br>
+    <span style="font-size:14px;color:var(--ui-text-soft)"><a href="mailto:corretaje@tumatchinmobiliario.cl" style="color:inherit;text-decoration:none;font-weight:600">corretaje@tumatchinmobiliario.cl</a> · <a href="https://wa.me/56934107448" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;font-weight:600">WhatsApp +56 9 3410 7448</a></span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

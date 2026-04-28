@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin · Onboarding Corredor Freelance · Preview interno</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.admin-banner{background:linear-gradient(135deg,#0D1B2A,#1C2E47);color:#FFF;padding:24px 30px;border-radius:12px;margin:24px 0;box-shadow:0 8px 28px rgba(13,27,42,.25)}
+.admin-banner-title{font-family:'Cinzel',serif;font-size:22px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px}
+.admin-banner-sub{font-family:'EB Garamond',serif;font-size:15px;color:#E4D7B6;font-style:italic;line-height:1.5}
+.admin-toc{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin:28px 0}
+.admin-toc a{background:var(--ui-surface);border:1.5px solid var(--ui-border);padding:14px 18px;border-radius:10px;color:var(--ui-text);text-decoration:none;font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;transition:all .2s}
+.admin-toc a:hover{border-color:var(--coral);transform:translateY(-1px);box-shadow:0 6px 18px rgba(232,93,74,.15)}
+.admin-section{background:var(--ui-surface);border:1px solid var(--ui-border);border-radius:14px;padding:28px 32px;margin:24px 0}
+.admin-section h2{font-family:'Cinzel',serif;font-size:22px;letter-spacing:1px;margin:0 0 6px;color:var(--ui-text);padding-bottom:12px;border-bottom:3px solid var(--coral)}
+.admin-section .tag{font-family:'Cinzel',serif;font-size:10.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--coralDk);font-weight:700;margin-bottom:10px}
+.admin-q{background:var(--ui-bg);border-left:3px solid var(--ui-border);padding:14px 18px;margin:14px 0;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--ui-text);line-height:1.6}
+.admin-q.correct{border-left-color:#15803D;background:rgba(34,197,94,.08)}
+.admin-q .q-num{display:inline-block;font-family:'DM Mono',monospace;font-size:11px;font-weight:700;background:var(--navy);color:#FFF;padding:2px 8px;border-radius:4px;margin-right:8px}
+.admin-q .q-text{font-weight:700;color:var(--ui-text);margin-bottom:10px;font-size:15px}
+.admin-q ul{list-style:none;padding-left:0;margin:0}
+.admin-q li{padding:4px 10px;margin:3px 0;border-radius:4px;font-size:13.5px}
+.admin-q li.is-correct{background:rgba(34,197,94,.18);font-weight:700;color:#14532D}
+.admin-q li.is-wrong em{color:var(--slate);font-style:italic;font-size:12.5px;margin-left:6px}
+.admin-q .admin-why{margin-top:8px;padding:8px 12px;background:rgba(232,93,74,.08);border-left:3px solid var(--coral);font-family:'EB Garamond',serif;font-size:14px;color:var(--ui-text);font-style:italic;border-radius:0 6px 6px 0}
+.admin-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.admin-meta span{background:rgba(212,160,23,.12);color:var(--goldDk);padding:4px 12px;border-radius:20px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;border:1px solid rgba(212,160,23,.3)}
+.admin-quick-access{background:linear-gradient(135deg,rgba(13,27,42,.04),rgba(212,160,23,.06));border:1px solid rgba(212,160,23,.35);border-radius:12px;padding:18px 22px;margin:20px 0 8px}
+.admin-qa-title{font-family:'Cinzel',serif;font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--coralDk);margin-bottom:12px}
+.admin-qa-links{display:flex;flex-wrap:wrap;gap:8px}
+.admin-qa-links a{background:var(--navy);color:#FFF;font-family:'DM Sans',sans-serif;font-weight:600;font-size:12.5px;padding:8px 14px;border-radius:8px;text-decoration:none;transition:all .15s;border:1px solid var(--navy)}
+.admin-qa-links a:hover{background:var(--coral);border-color:var(--coral);transform:translateY(-1px)}
+.admin-qa-links a.qa-final{background:var(--gold);border-color:var(--gold);color:#1B1306}
+.admin-qa-links a.qa-final:hover{background:var(--goldDk);border-color:var(--goldDk);color:#FFF}
+.admin-qa-links a.qa-home{background:transparent;color:var(--navy);border:1.5px dashed var(--navy)}
+.admin-qa-links a.qa-home:hover{background:var(--navy);color:#FFF}
+[data-theme="dark"] .admin-qa-links a.qa-home{color:var(--ui-text);border-color:var(--ui-text)}
+</style>
+</head>
+<body>
+<div class="page" style="max-width:1080px;margin:0 auto;padding:20px">
+
+  <div class="admin-banner">
+    <div class="admin-banner-title">Admin · Onboarding Corredor Freelance</div>
+    <div class="admin-banner-sub">Preview interno con todas las preguntas y respuestas correctas visibles. Solo para revisión TuMatch — no compartir este URL con candidatos.</div>
+  </div>
+
+  <div class="admin-meta">
+    <span>9 módulos + prueba final</span>
+    <span>180 preguntas banco módulos (20 × 9)</span>
+    <span>80 preguntas banco final</span>
+    <span>20 al azar · 16/20 aprueba</span>
+    <span>Bloqueo 5 min módulos · 5 min final</span>
+    <span>Alternativas rotadas (shuffle)</span>
+  </div>
+
+  <div class="admin-quick-access">
+    <div class="admin-qa-title">Acceso directo al taller · modo admin (todos los módulos desbloqueados)</div>
+    <div class="admin-qa-links" id="adminQuickLinks"></div>
+  </div>
+
+  <div class="admin-toc" id="adminToc"></div>
+
+  <div id="adminContent"></div>
+
+</div>
+
+<script src="app.js"></script>
+<script>
+(function(){
+  const MODULE_NAMES = [
+    'Módulo 1 · Bienvenida + mentalidad freelance',
+    'Módulo 2 · Los 4 tipos de cliente · identificar en 2 min',
+    'Módulo 3 · Prospección y primer contacto',
+    'Módulo 4 · Proceso de una operación · punta a punta',
+    'Módulo 5 · Tipo 1 · Comprador Primera Vivienda',
+    'Módulo 6 · Tipo 2 · Inversionista',
+    'Módulo 7 · Tipo 3 · Cliente Vendedor',
+    'Módulo 8 · Tipo 4 · Operación Arriendo',
+    'Módulo 9 · Tu red, 30 contactos y carrera'
+  ];
+  const toc = document.getElementById('adminToc');
+  toc.innerHTML = MODULE_NAMES.map((n, i) => (
+    '<a href="#mod-' + (i+1) + '">' + n + '</a>'
+  )).join('') + '<a href="#final" style="border-color:var(--gold);color:var(--goldDk);background:rgba(212,160,23,.08)">★ Banco prueba final (80)</a>';
+
+  const qa = document.getElementById('adminQuickLinks');
+  const qaLinks = [
+    '<a class="qa-home" href="index.html?admin=1#mod-0">Inicio / índice</a>'
+  ];
+  for (let i = 1; i <= 9; i++) qaLinks.push('<a href="index.html?admin=1#mod-' + i + '">Módulo ' + i + '</a>');
+  qaLinks.push('<a class="qa-final" href="index.html?admin=1#mod-final">★ Prueba final</a>');
+  qaLinks.push('<a class="qa-final" href="index.html?admin=1#mod-done">Certificado</a>');
+  qa.innerHTML = qaLinks.join('');
+
+  function renderQuestion(q, idx) {
+    const correct = q.correct;
+    const opts = q.opts.map((opt, i) => {
+      const isCorrect = i === correct;
+      const wn = (q.whyNot && q.whyNot[i]) ? q.whyNot[i] : '';
+      return '<li class="' + (isCorrect ? 'is-correct' : 'is-wrong') + '">' +
+        String.fromCharCode(65+i) + '. ' + opt +
+        (isCorrect ? ' ✓' : (wn ? '<em>— ' + wn + '</em>' : '')) +
+      '</li>';
+    }).join('');
+    return '<div class="admin-q correct">' +
+      '<span class="q-num">#' + (idx+1) + '</span>' +
+      '<div class="q-text" style="display:inline">' + q.q + '</div>' +
+      '<ul>' + opts + '</ul>' +
+      (q.why ? '<div class="admin-why">💡 ' + q.why + '</div>' : '') +
+    '</div>';
+  }
+
+  let html = '';
+  MODULE_NAMES.forEach((name, i) => {
+    const n = i+1;
+    const bank = quizBank[n] || [];
+    html += '<div class="admin-section" id="mod-' + n + '">' +
+      '<div class="tag">Módulo ' + n + ' · Banco intermedio · 10 preguntas</div>' +
+      '<h2>' + name + '</h2>' +
+      '<div>5 preguntas se eligen al azar por rendición. Alternativas con orden aleatorizado.</div>' +
+      bank.map((q, i) => renderQuestion(q, i)).join('') +
+    '</div>';
+  });
+
+  html += '<div class="admin-section" id="final">' +
+    '<div class="tag">★ Prueba final · Banco rotativo · 80 preguntas</div>' +
+    '<h2>Banco completo de la prueba de certificación</h2>' +
+    '<div>20 preguntas se extraen al azar, orden de alternativas rota en cada render. <strong>Respuestas incorrectas NO se muestran al alumno al terminar.</strong></div>' +
+    finalBank.map((q, i) => renderQuestion(q, i)).join('') +
+  '</div>';
+
+  document.getElementById('adminContent').innerHTML = html;
+})();
+</script>
+</body>
+</html>
